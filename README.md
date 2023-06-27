@@ -50,6 +50,6 @@ Check out `TODO.md` for some more optional next steps.
 
 [Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
 
-- Want more details about Eleventy on Glitch? We've got a [Help Center article](https://help.glitch.com/kb/article/111) just for that.
+- Want more details about Eleventy on Glitch? We've got a [Help Center article](https://help.glitch.com/hc/en-us/articles/16287563161229-Eleventy-Projects) just for that.
 - Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
 - Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
