@@ -10,6 +10,7 @@ to this section's matching END comment to see page-specific styles.
 :root {
   --color-bg: #D7F5EF;
   --color-text-main: #000000;
+  --color-text-header: #2800FF;
   --color-primary: #AFECE0;
   --wrapper-height: 85vh;
   --image-max-width: 320px;
@@ -140,7 +141,7 @@ h1 {
   margin-bottom: 1.75rem;
   font-size: 5rem;
   display: inline-flex;
-  color: #2800FF;
+  color: var(--color-text-header);
 }
 h2 {
   font-size: 4rem;
