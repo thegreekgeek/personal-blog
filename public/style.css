@@ -105,7 +105,7 @@ END Glitch hello-app default styles
 /* Page structure */
 body {
   font-family: var(--font-family);
-  background-color: var(--color-bg);
+  background-color: var(--uchu-light-grey);
 }
 .wrapper {
   min-height: var(--wrapper-height);
@@ -134,14 +134,14 @@ h5 {
   font-family: var(--font-family-header);
   font-weight: 600;
   line-height: 1.1;
-  color: var(--color-text-main);
+  color: var(--uchu-yin);
 }
 h1 {
   margin-top: 1rem;
   margin-bottom: 1.75rem;
   font-size: 5rem;
   display: inline-flex;
-  color: var(--color-text-header);
+  color: var(--uchu-dark-blue);
 }
 h2 {
   font-size: 4rem;
