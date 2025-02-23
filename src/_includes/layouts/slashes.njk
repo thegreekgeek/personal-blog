@@ -1,16 +1,17 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
+permalink: "/slashes.html"
 ---
 
-{# This is the template for the slahs pages–it lists the posts in the collection #}
+{# This is the template for the Posts page–it lists the posts in the collection #}
 
 <div class="wrapper home">
   <div class="content">
     {{ content | safe }}
- <ul>
+    <ul>
       {%- for slash in collections.slashes -%}
-        <li{% if page.url == slash.url %} aria-current="page"{% endif %}>{{ slash.data.page.date | htmlDateString }} — <a href='{{ page.url }}'>{{ page.data.title }}</a></li>
+        <li{% if page.url == slash.url %} aria-current="page"{% endif %}><a href='{{ slash.data.permalink }}'>{{ slash.data.title }}</a> // last edited {{ slash.data.page.date | htmlDateString }}</li>
       {%- endfor -%}
     </ul>
   </div>

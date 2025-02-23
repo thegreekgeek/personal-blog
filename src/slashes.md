@@ -1,5 +1,5 @@
 ---
-layout: layouts/pages.njk
+layout: layouts/slashes.njk
 ---
 
 ## Slash Pages
