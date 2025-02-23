@@ -3,9 +3,6 @@ layout: layouts/slash.njk
 tags:
   - slashes
 date: 2025-02-22
-title: "/uses"
+title: "/edc"
+url: "/edc"
 ---
-
-## Things I use
-#### On a daily basis
-- 

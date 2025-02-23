@@ -2,6 +2,6 @@
 layout: layouts/slashes.njk
 ---
 
-## Posts
+## Slash Pages
 
-Write some details about your post lists. Or don't, and remove this!
+Slash pages are dope!
