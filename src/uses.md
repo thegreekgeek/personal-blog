@@ -1,5 +1,6 @@
 ---
 layout: layouts/page.njk
+tags: "slashes"
 ---
 
 ## Things I use
