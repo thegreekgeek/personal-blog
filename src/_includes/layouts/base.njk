@@ -11,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
     {% seo "" %}
   </head>
-  <header>
-    <nav>
+  <header class="header">
       <div class="links">
         <a href="/">Home</a>
         <span class="divider">|</span>
@@ -20,7 +19,6 @@
         <span class="divider">|</span>
         <a href="/about">About</a>
       </div>
-    </nav>
   </header>
   <body>
   <main>
@@ -30,10 +28,7 @@
     {{ content | safe }}
 
       <footer class="footer">
-        <a class="btn--remix" target="_top" href="https://glitch.com/edit/#!/remix/glitch-hello-eleventy">
-        <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="" /> 
-        Remix on Glitch
-        </a>
+
       </footer>
     
   </main>
