@@ -2,6 +2,6 @@
 layout: layouts/notes.njk
 ---
 
-## Posts
+## Notes
 
-Write some details about your post lists. Or don't, and remove this!
+Write some details about your note lists. Or don't, and remove this!
