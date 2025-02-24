@@ -2,9 +2,11 @@
 layout: layouts/page.njk
 tags:
   - slashes
-date: 2025-02-22
+date: 2025-02-24
 title: "/colophon"
 permalink: "/colophon"
 ---
 
-This site is build with [eleventy](https://www.11ty.dev)
+# Colophon
+
+This site is build with [eleventy](https://www.11ty.dev) using [glitch](https://glitch.com).

@@ -94,6 +94,30 @@ module.exports = function(eleventyConfig) {
 
     return coll;
   });
+  
+    eleventyConfig.addCollection("slashes", function(collection) {
+    
+    /* The slashes collection includes all slash pages that list 'slashes' in the front matter 'tags'
+       - https://www.11ty.dev/docs/collections/
+    */
+    
+    // EDIT HERE WITH THE CODE FROM THE NEXT STEPS PAGE TO REVERSE CHRONOLOGICAL ORDER
+    // (inspired by https://github.com/11ty/eleventy/issues/898#issuecomment-581738415)
+    const coll = collection
+      .getFilteredByTag("slashes");
+
+    // From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
+    // Adds {{ prevSlash.url }} {{ prevSlash.data.title }}, etc, to our njks templates
+    for (let i = 0; i < coll.length; i++) {
+      const prevSlash = coll[i - 1];
+      const nextSlash = coll[i + 1];
+
+      coll[i].data["prevSlash"] = prevSlash;
+      coll[i].data["nextSlash"] = nextSlash;
+    }
+
+    return coll;
+  });
 
   return {
     dir: {
