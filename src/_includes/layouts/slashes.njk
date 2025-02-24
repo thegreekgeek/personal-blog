@@ -10,7 +10,7 @@ templateClass: tmpl-home
     {{ content | safe }}
     <ul>
       {%- for slash in collections.slashes -%}
-        <li{% if page.url == slash.url %} aria-current="page"{% endif %}><a href="{{ slash.data.permalink }}">{{ slash.data.title }}</a> // last edited {{ slash.data.page.date | htmlDateString }}</li>
+        <li{% if page.url == slash.url %} aria-current="page"{% endif %}><a href="{{ slash.data.permalink }}">{{ slash.data.title }}</a> // last edited [{{ slash.data.page.date | htmlDateString }}]</li>
       {%- endfor -%}
     </ul>
   </div>

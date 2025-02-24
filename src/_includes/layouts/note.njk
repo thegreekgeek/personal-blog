@@ -12,7 +12,10 @@ templateClass: tmpl-home
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
     
     {# Content from the body of the note markdown appears here #}
+    <div>
     {{ content | safe }}
+    </div>
+
     <div class="controls">
     {# The previous and next note data is added in .eleventy.js #}
     {% if prevNote.url %}
