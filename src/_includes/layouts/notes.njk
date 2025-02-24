@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# This is the template for the Notes page–it lists the notes in the collection #}
+
+<div class="wrapper home">
+  <div class="content">
+    {{ content | safe }}
+    <ul>
+      {%- for note in collections.notes -%}
+        <li{% if page.url == note.url %} aria-current="page"{% endif %}>{{ note.data.page.date | htmlDateString }} — <a href='{{ note.url }}'>{{ note.data.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>

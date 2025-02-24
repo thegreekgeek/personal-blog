@@ -67,10 +67,13 @@ module.exports = function(eleventyConfig) {
       coll[i].data["prevPost"] = prevPost;
       coll[i].data["nextPost"] = nextPost;
     }
+
+    return coll;
+  });
+  
+    eleventyConfig.addCollection("notes", function(collection) {
     
-  eleventyConfig.addCollection("notes", function(collection) {
-    
-    /* The posts collection includes all posts that list 'posts' in the front matter 'tags'
+    /* The notes collection includes all notes that list 'notes' in the front matter 'tags'
        - https://www.11ty.dev/docs/collections/
     */
     
