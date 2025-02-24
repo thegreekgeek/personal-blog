@@ -9,7 +9,7 @@ permalink: "/uses/"
 
 ## Things I use
 
-#### At my computer desk
+#### At my desk
 
 - Logitech G13
-- Logitech TrackMan marble wheel
+- Logitech TrackMan Marble Wheel

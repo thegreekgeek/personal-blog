@@ -67,6 +67,27 @@ module.exports = function(eleventyConfig) {
       coll[i].data["prevPost"] = prevPost;
       coll[i].data["nextPost"] = nextPost;
     }
+    
+  eleventyConfig.addCollection("notes", function(collection) {
+    
+    /* The posts collection includes all posts that list 'posts' in the front matter 'tags'
+       - https://www.11ty.dev/docs/collections/
+    */
+    
+    // EDIT HERE WITH THE CODE FROM THE NEXT STEPS PAGE TO REVERSE CHRONOLOGICAL ORDER
+    // (inspired by https://github.com/11ty/eleventy/issues/898#issuecomment-581738415)
+    const coll = collection
+      .getFilteredByTag("notes");
+
+    // From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426 
+    // Adds {{ prevPost.url }} {{ prevPost.data.title }}, etc, to our njks templates
+    for (let i = 0; i < coll.length; i++) {
+      const prevNote = coll[i - 1];
+      const nextNote = coll[i + 1];
+
+      coll[i].data["prevNote"] = prevNote;
+      coll[i].data["nextNote"] = nextNote;
+    }
 
     return coll;
   });
