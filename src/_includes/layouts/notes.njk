@@ -10,7 +10,7 @@ templateClass: tmpl-home
     {{ content | safe }}
     <ul>
       {%- for note in collections.notes -%}
-        <li{% if page.url == note.url %} aria-current="page"{% endif %}>{{ note.data.page.date | htmlDateString }} — <a href='{{ note.url }}'>{{ note.data.title }}</a></li>
+        <li{% if page.url == note.url %} aria-current="page"{% endif %}><a href='{{ note.url }}'>{{ note.data.page.date | htmlDateString }} — {{ note.data.content | safe }}</a></li>
       {%- endfor -%}
     </ul>
   </div>
