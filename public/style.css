@@ -8,10 +8,10 @@ to this section's matching END comment to see page-specific styles.
 ******************************************************************************/
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #D7F5EF;
+  --color-bg: #d7f5ef;
   --color-text-main: #000000;
-  --color-text-header: #2800FF;
-  --color-primary: #AFECE0;
+  --color-text-header: #2800ff;
+  --color-primary: #afece0;
   --wrapper-height: 85vh;
   --image-max-width: 320px;
   --font-family: "HK Grotesk";
@@ -49,7 +49,7 @@ to this section's matching END comment to see page-specific styles.
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -62,7 +62,7 @@ to this section's matching END comment to see page-specific styles.
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  background-color: #D0FFF1;
+  background-color: #d0fff1;
 }
 
 /* Navigation grid */
@@ -130,7 +130,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 2rem 0 .8rem;
+  margin: 2rem 0 0.8rem;
   font-family: var(--font-family-header);
   font-weight: 600;
   line-height: 1.1;
@@ -227,7 +227,7 @@ a:hover {
   margin: 3rem 0 2rem;
 }
 
-/* Post */
+/* note */
 .note {
   place-items: normal;
 }
@@ -236,4 +236,19 @@ a:hover {
   color: #000;
   line-height: 1.1;
   margin-bottom: 2rem;
+}
+.navbar {
+  display: flex;
+  flex-wrap: nowrap; /* Items stay on one line by default */
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* Allow items to wrap to a new line */
+  }
+  .navbar a {
+    flex: 1 1 50%; /* Each item takes up roughly half the container's width, creating two rows */
+    text-align: center;
+    padding: 10px;
+  }
 }
