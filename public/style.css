@@ -247,7 +247,7 @@ a:hover {
     flex-wrap: wrap; /* Allow items to wrap to a new line */
   }
   .navbar a {
-    flex: 1 1 50%; /* Each item takes up roughly half the container's width, creating two rows */
+    flex: 1 1 25%; /* Each item takes up roughly half the container's width, creating two rows */
     text-align: center;
     padding: 10px;
   }
