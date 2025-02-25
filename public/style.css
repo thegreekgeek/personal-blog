@@ -108,7 +108,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
+  color: var(--fg-0);
   text-decoration: none;
   border-style: none;
 }
@@ -150,6 +150,7 @@ p {
   margin: 0 0 1rem 0;
   line-height: 1.5 !important;
   font-size: 1rem;
+  color: var(--fg-0)
 }
 h1,
 h2,
@@ -204,7 +205,7 @@ a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
   text-decoration: none;
   border-bottom: 6px solid var(--uchu-light-blue);
-  color: var(--uchu-yin);
+  color: var(--fg-0);
   transition: background 0.2s linear;
 }
 a:hover {
