@@ -7,7 +7,7 @@ title: "/chipolte"
 permalink: "/chipolte"
 ---
 
-# My go-to chipolte order
+# Go-to Chipolte order
 
 - Burrito
   - Steak

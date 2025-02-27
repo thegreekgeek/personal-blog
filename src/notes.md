@@ -3,5 +3,4 @@ layout: layouts/notes.njk
 ---
 
 ## Notes
-
-Write some details about your note lists. Or don't, and remove this!
+A collection of notes that one day will hopefully be pulled from a microblog account.
