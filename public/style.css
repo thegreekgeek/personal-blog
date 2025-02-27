@@ -114,7 +114,8 @@ a:not(.btn--remix):visited {
   border-style: none;
 }
 .header a:hover {
-  background: var(--color-primary);
+  background: var(--blue);
+  color: var(--br-blue)
 }
 
 .header .links {
@@ -217,6 +218,7 @@ a:not(.btn--remix):visited {
 }
 a:hover {
   background: var(--blue);
+  color: var(--br-blue)
 }
 
 /* Title style adjustments */
