@@ -10,7 +10,11 @@ properties into the page #}
   <article class="h-entry">
     {# The post front matter includes the title property #}
     <h1 class="postTitle p-name">{{ title }}</h1>
-
+    <details>
+      <time class="dt-published" datetime="{{ date | isoDateString }}">
+        published on: {{ date | htmlDateString }}
+      </time>
+    </details>
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #} {# Content from the body of
     the post markdown appears here #}
     <div class="e-content">{{ content | safe }}</div>

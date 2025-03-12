@@ -33,7 +33,7 @@ to this section's matching END comment to see page-specific styles.
   --br-cyan: #53d6c7;
   --br-orange: #fd9456;
   --br-violet: #bd96fa;
-    /* default glotch colors */
+  /* default glitch colors */
   --color-bg: #d7f5ef;
   --color-text-main: #000000;
   --color-text-header: #2800ff;
@@ -115,7 +115,7 @@ a:not(.btn--remix):visited {
 }
 .header a:hover {
   background: var(--blue);
-  color: var(--br-blue)
+  color: var(--br-blue);
 }
 
 .header .links {
@@ -157,7 +157,7 @@ p {
   margin: 0 0 1rem 0;
   line-height: 1.5 !important;
   font-size: 1rem;
-  color: var(--fg-0)
+  color: var(--fg-0);
 }
 h1,
 h2,
@@ -198,7 +198,7 @@ ol > li {
   margin-bottom: 0.75rem;
   line-height: 1.5;
   font-size: 1rem;
-  color: var(--fg-0)
+  color: var(--fg-0);
 }
 ul {
   padding: 0 0 0 18px;
@@ -218,7 +218,7 @@ a:not(.btn--remix):visited {
 }
 a:hover {
   background: var(--blue);
-  color: var(--br-blue)
+  color: var(--br-blue);
 }
 
 /* Title style adjustments */
@@ -255,12 +255,15 @@ a:hover {
 }
 .postTitle {
   font-size: 4rem;
-  color: #000;
+  /* color: #000; */
   line-height: 1.1;
   margin-bottom: 2rem;
 }
 .controls {
   margin: 3rem 0 2rem;
+}
+details {
+  color: var(--blue);
 }
 
 /* note */
