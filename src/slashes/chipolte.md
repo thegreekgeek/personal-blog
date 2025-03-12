@@ -4,7 +4,7 @@ tags:
   - slashes
 date: 2025-02-24
 title: "/chipolte"
-permalink: "/chipolte"
+permalink: "/chipolte/"
 ---
 
 # Go-to Chipolte order

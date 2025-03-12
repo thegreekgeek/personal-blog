@@ -4,7 +4,7 @@ tags:
   - slashes
 date: 2025-02-24
 title: "/colophon"
-permalink: "/colophon"
+permalink: "/colophon/"
 ---
 
 # Colophon
