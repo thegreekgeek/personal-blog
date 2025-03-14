@@ -1,4 +1,54 @@
-### Began adding microformat support to the site (HEAD -> main)
+### added some microformatting (HEAD -> main)
+>Fri, 14 Mar 2025 12:31:02 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Changed some of the glitch branding
+>Fri, 14 Mar 2025 12:30:52 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Removed default posts, modified edc slashpage
+>Fri, 14 Mar 2025 12:29:59 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### New post
+>Fri, 14 Mar 2025 12:29:12 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Added published date to posts, along with a filter to iso date and accompanying css
+>Wed, 12 Mar 2025 10:49:43 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Began adding microformat support to the site
 >Tue, 11 Mar 2025 19:27:42 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -8,7 +58,7 @@
 
 
 
-### Added some trailing slashes to things because apparently that's important. (origin/main, origin/HEAD)
+### Added some trailing slashes to things because apparently that's important.
 >Tue, 11 Mar 2025 19:15:23 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
