@@ -1,4 +1,4 @@
-### added changelog (HEAD -> main)
+### added changelog
 >Fri, 14 Mar 2025 12:31:11 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -40,6 +40,16 @@
 
 ### New post
 >Fri, 14 Mar 2025 12:29:12 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Changed some of the links to remove glitch stuff, added some microformatting to the post template (origin/main, origin/HEAD)
+>Fri, 14 Mar 2025 12:25:32 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
 
