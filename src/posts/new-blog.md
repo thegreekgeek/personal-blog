@@ -5,6 +5,7 @@ date: 2025-03-12
 tags:
   - posts
 layout: layouts/post.njk
+permalink: "subdir/{{ title | slugify}}/"
 ---
 
 Hey all! So after failing to grok hugo I switched my blog backend to 11ty. It's going loads better already and hopefully this'll mesh well with my JS class.

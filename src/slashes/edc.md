@@ -11,3 +11,6 @@ permalink: "/edc/"
 
 - Leatherman Micra
 - True Utility keychain
+- NerdWax
+- Lost Dutchman leather wallet
+- Chapstick
