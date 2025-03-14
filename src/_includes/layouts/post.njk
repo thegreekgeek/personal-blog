@@ -11,9 +11,12 @@ properties into the page #}
     {# The post front matter includes the title property #}
     <h1 class="postTitle p-name">{{ title }}</h1>
     <details>
-      <time class="dt-published" datetime="{{ date | isoDateString }}">
-        published on: {{ date | htmlDateString }}
-      </time>
+      <a class="u-url" href="{{ page.data.permalink }}">
+        <time class="dt-published" datetime="{{ date | isoDateString }}">
+          posted: {{ date | htmlDateString }}
+        </time>
+      </a>
+      <a rel="author" class="p-author h-card" href="/">Robert Young</a>
     </details>
     {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #} {# Content from the body of
     the post markdown appears here #}
