@@ -9,4 +9,4 @@ permalink: "/colophon/"
 
 # Colophon
 
-This site is build with [eleventy](https://www.11ty.dev) using [glitch](https://glitch.com).
+This site is build with [eleventy](https://www.11ty.dev) using the [glitch](https://glitch.com) hello-eleventy project. Get yours [here!](https://glitch.com/edit/#!/remix/glitch-hello-eleventy)

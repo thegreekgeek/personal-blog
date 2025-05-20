@@ -1,4 +1,14 @@
-### Updated posts to include microformats (HEAD -> main)
+### removed microformatting because I didn't do it right lol (HEAD -> main)
+>Tue, 20 May 2025 10:25:19 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Updated posts to include microformats (origin/main, origin/HEAD)
 >Tue, 20 May 2025 10:23:15 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### Added rel=me and u-url and u-id to links in head (origin/main, origin/HEAD)
+### Added rel=me and u-url and u-id to links in head
 >Tue, 20 May 2025 10:18:00 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
