@@ -1,4 +1,14 @@
-### removed microformatting because I didn't do it right lol (HEAD -> main)
+### Started post and edited colophon. (HEAD -> main)
+>Tue, 20 May 2025 12:06:50 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### removed microformatting because I didn't do it right lol (origin/main, origin/HEAD)
 >Tue, 20 May 2025 10:25:19 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### Updated posts to include microformats (origin/main, origin/HEAD)
+### Updated posts to include microformats
 >Tue, 20 May 2025 10:23:15 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)

@@ -117,6 +117,12 @@ module.exports = function (eleventyConfig) {
     return coll;
   });
 
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+
   return {
     dir: {
       input: "src",
