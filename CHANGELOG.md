@@ -1,4 +1,24 @@
-### Added a new post, added a rel=me link to the site head (HEAD -> main)
+### Updated posts to include microformats (HEAD -> main)
+>Tue, 20 May 2025 10:23:15 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Added rel=me and u-url and u-id to links in head (origin/main, origin/HEAD)
+>Tue, 20 May 2025 10:18:00 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Added a new post, added a rel=me link to the site head
 >Tue, 20 May 2025 10:09:58 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -8,7 +28,7 @@
 
 
 
-### Potentia fix for permalink frontmatter (origin/main, origin/HEAD)
+### Potentia fix for permalink frontmatter
 >Fri, 14 Mar 2025 12:34:49 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
