@@ -1,4 +1,14 @@
-### Potentia fix for permalink frontmatter (HEAD -> main)
+### Added a new post, added a rel=me link to the site head (HEAD -> main)
+>Tue, 20 May 2025 10:09:58 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Potentia fix for permalink frontmatter (origin/main, origin/HEAD)
 >Fri, 14 Mar 2025 12:34:49 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
