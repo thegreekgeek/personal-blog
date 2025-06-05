@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     {# This is the base template for the site–other templates extend this one #}
-    
+
     <meta charset="utf-8" />
-    <link rel="icon" href="https://cdn.some.pics/thegreekgeek/677c6f3894200.png" />
+    <link
+      rel="icon"
+      href="https://cdn.some.pics/thegreekgeek/677c6f3894200.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Your new 11ty blog" />
     <link rel="me" href="https://github.com/thegreekgeek" />
     <span class="p-author h-card" style="display: none">
-      <a class="u-url u-uid p-name" rel=me href="https://thegreekgeek.neocities.org" rel="author">Robert Young</a>
+      <a
+        class="u-url u-uid p-name"
+        rel="me"
+        href="https://thegreekgeek.neocities.org"
+        rel="author"
+        >Robert Young</a
+      >
       <p class="p-note">I'm Rob, and I like to tinker with things.</p>
-      <img class="u-photo" src="https://cdn.some.pics/thegreekgeek/677c6f3894200.png" alt="Robert Young's avatar">
+      <img
+        class="u-photo"
+        src="https://cdn.some.pics/thegreekgeek/677c6f3894200.png"
+        alt="Robert Young's avatar"
+      />
     </span>
     <link rel="stylesheet" type="text/css" href="/public/style.css" />
-      <link href="https://uchu.style/color.css" rel="stylesheet"/>
+    <link href="https://uchu.style/color.css" rel="stylesheet" />
     {% seo "" %}
   </head>
-  <header class="header">
-      <div class="links navbar">
-        <a href="/">Home</a>
-        <span class="divider">|</span>
-        <a href="/posts">Posts</a>
-        <span class="divider">|</span>
-        <a href="/notes">Notes</a>
-        <span class="divider">|</span>
-        <a href="/about">About</a>
-        <span class="divider">|</span>
-        <a href="/slashes/">Slashes</a>
-      </div>
-  </header>
+  <!-- <header class="header"></header> -->
   <body>
-  <main>
-    
-    {# Page or post content will appear here #}
-  
-    {{ content | safe }}
+    <div id="container">
+      <div id="headerArea"></div>
+      <nav id="navbar" style="margin-bottom: 0px">
+        <div class="links navbar">
+          <a href="/">Home</a>
+          <span class="divider">|</span>
+          <a href="/posts">Posts</a>
+          <span class="divider">|</span>
+          <a href="/notes">Notes</a>
 
-      <footer class="footer">
+          <span class="divider">|</span>
+          <a href="/slashes/">Slashes</a>
+        </div>
+      </nav>
 
-      </footer>
-    
-  </main>
-   
+      <div id="flex">
+        <main>
+          {{ content | safe }}
+        </main>
+        <aside id="rightSidebar" style="margin-left: 0px">
+          <h2>Hi there!</h2>
+          <h3>Status.lol</h3>
+          <script src="https://status.lol/thegreekgeek.js?time&link&fluent"></script>
+          <h2>Updates</h2>
+          <div class="box">
+            <p>I have recently updated this tool as of August 2022!</p>
+            <ul style="padding-left: 10px">
+              <li>Rewrote the JS to generate cleaner code</li>
+              <li>
+                Rewrote the CSS in a way that hopefully makes much more sense to
+                edit
+              </li>
+              <li>Added a couple of new features!</li>
+              <li>
+                Old version is still available
+                <a href="old.html" target="_blank">here</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer id="footer" class="footer" style="margin-top: 0px"></footer>
+    </div>
   </body>
 </html>

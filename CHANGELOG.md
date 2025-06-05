@@ -1,4 +1,14 @@
-### Started post and edited colophon. (HEAD -> main)
+### Added a preprocessor to catch content tagged "drafts". (HEAD -> main)
+>Tue, 20 May 2025 12:21:37 -0500
+
+>Author: thegreekgeek (thegreekgeekster@gmail.com)
+
+>Commiter: thegreekgeek (thegreekgeekster@gmail.com)
+
+
+
+
+### Started post and edited colophon. (origin/main, origin/HEAD)
 >Tue, 20 May 2025 12:06:50 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)
@@ -8,7 +18,7 @@
 
 
 
-### removed microformatting because I didn't do it right lol (origin/main, origin/HEAD)
+### removed microformatting because I didn't do it right lol
 >Tue, 20 May 2025 10:25:19 -0500
 
 >Author: thegreekgeek (thegreekgeekster@gmail.com)

@@ -48,6 +48,7 @@ to this section's matching END comment to see page-specific styles.
 * {
   box-sizing: border-box;
 }
+
 [hidden] {
   display: none !important;
 }
@@ -59,6 +60,7 @@ to this section's matching END comment to see page-specific styles.
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
     format("opentype");
 }
+
 @font-face {
   font-family: HK Grotesk;
   font-weight: bold;
@@ -113,6 +115,7 @@ a:not(.btn--remix):visited {
   text-decoration: none;
   border-style: none;
 }
+
 .header a:hover {
   background: var(--blue);
   color: var(--br-blue);
@@ -135,11 +138,13 @@ body {
   font-family: var(--font-family);
   background-color: var(--bg-0);
 }
+
 .wrapper {
   min-height: var(--wrapper-height);
   place-items: center;
   margin: 3rem 2rem 0;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -153,12 +158,14 @@ body {
   margin-bottom: 5rem;
   font-size: max(0.75vw, 0.25rem);
 }
+
 p {
   margin: 0 0 1rem 0;
   line-height: 1.5 !important;
   font-size: 1rem;
   color: var(--fg-0);
 }
+
 h1,
 h2,
 h3,
@@ -170,6 +177,7 @@ h5 {
   line-height: 1.1;
   color: var(--fg-0);
 }
+
 h1 {
   margin-top: 1rem;
   margin-bottom: 1.75rem;
@@ -177,22 +185,28 @@ h1 {
   display: inline-flex;
   color: var(--br-blue);
 }
+
 h2 {
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
+
 h3 {
   font-size: 2rem;
 }
+
 h4 {
   font-size: 1.5rem;
 }
+
 h5 {
   font-size: 1.25rem;
 }
+
 small,
 .text_small {
   font-size: 0.8rem;
 }
+
 ul > li,
 ol > li {
   margin-bottom: 0.75rem;
@@ -200,10 +214,12 @@ ol > li {
   font-size: 1rem;
   color: var(--fg-0);
 }
+
 ul {
   padding: 0 0 0 18px;
   margin: 0;
 }
+
 ul.no-bullet {
   list-style-type: none;
 }
@@ -216,6 +232,7 @@ a:not(.btn--remix):visited {
   color: var(--fg-0);
   transition: background 0.2s linear;
 }
+
 a:hover {
   background: var(--blue);
   color: var(--br-blue);
@@ -229,6 +246,7 @@ a:hover {
   font-weight: bold;
   line-height: 1.5;
 }
+
 .title-md {
   font-size: 56px;
 }
@@ -237,10 +255,12 @@ a:hover {
 .home {
   justify-content: left;
 }
+
 .illo-container {
   display: flex;
   justify-content: flex-end;
 }
+
 .illustration {
   max-width: 180px;
   max-height: var(--image-max-width);
@@ -253,15 +273,18 @@ a:hover {
 .post {
   place-items: normal;
 }
+
 .postTitle {
   font-size: 4rem;
   /* color: #000; */
   line-height: 1.1;
   margin-bottom: 2rem;
 }
+
 .controls {
   margin: 3rem 0 2rem;
 }
+
 details {
   color: var(--blue);
 }
@@ -270,24 +293,233 @@ details {
 .note {
   place-items: normal;
 }
+
 .noteTitle {
   font-size: 4rem;
   color: #000;
   line-height: 1.1;
   margin-bottom: 2rem;
 }
+
 .navbar {
   display: flex;
   flex-wrap: nowrap; /* Items stay on one line by default */
   justify-content: space-around;
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap; /* Allow items to wrap to a new line */
   }
+
   .navbar a {
     flex: 1 1 25%; /* Each item takes up roughly half the container's width, creating two rows */
     text-align: center;
     padding: 10px;
+  }
+}
+
+/* New page layout specific stuff */
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+/* below this line is CSS for the layout */
+
+/* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+
+#container {
+  max-width: 900px;
+  /* this is the width of your layout! */
+  /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+  margin: 0 auto;
+  /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+  EXCEPT for the navigation */
+#container a {
+  /* color: #ed64f5; */
+  font-weight: bold;
+  /* if you want to remove the underline
+    you can add a line below here that says:
+    text-decoration:none; */
+}
+
+#header {
+  width: 100%;
+  /* background-color: #5e4e8c; */
+  /* header color here! */
+  height: 150px;
+  /* this is only for a background image! */
+  /* if you want to put images IN the header, 
+    you can add them directly to the <div id="header"></div> element! */
+  background-image: var(--header-image);
+  background-size: 100%;
+}
+
+/* navigation section!! */
+#navbar {
+  height: 40px;
+  /* background-color: #13092d; */
+  /* navbar color */
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 10px;
+}
+
+/* navigation links*/
+#navbar li a {
+  /* color: #ed64f5; */
+  /* navbar text color */
+  font-weight: 800;
+  text-decoration: none;
+  /* this removes the underline */
+}
+
+/* navigation link when a link is hovered over */
+#navbar li a:hover {
+  /* color: #a49cba; */
+  text-decoration: underline;
+}
+
+#flex {
+  display: flex;
+}
+
+/* this colors BOTH sidebars
+  if you want to style them separately,
+  create styles for #leftSidebar and #rightSidebar */
+aside {
+  /* background-color: #241445; */
+  width: 200px;
+  padding: 20px;
+  font-size: smaller;
+  /* this makes the sidebar text slightly smaller */
+}
+
+/* this is the color of the main content area,
+  between the sidebars! */
+main {
+  /* background-color: #43256e; */
+  flex: 1;
+  padding: 20px;
+  order: 2;
+}
+
+/* what's this "order" stuff about??
+  allow me to explain!
+  if you're using both sidebars, the "order" value
+  tells the CSS the order in which to display them.
+  left sidebar is 1, content is 2, and right sidebar is 3! */
+
+*/ #leftSidebar {
+  order: 1;
+}
+
+#rightSidebar {
+  order: 3;
+}
+
+footer {
+  /* background-color: #13092d; */
+  /* background color for footer */
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  /* this centers the footer text */
+}
+
+h1,
+h2,
+h3 {
+  /* color: #ed64f5; */
+}
+
+h1 {
+  font-size: 25px;
+}
+
+strong {
+  /* this styles bold text */
+  color: #ed64f5;
+}
+
+/* this is just a cool box, it's the darker colored one */
+.box {
+  /* background-color: #13092d; */
+  /* border: 1px solid #ed64f5; */
+  padding: 10px;
+}
+
+/* CSS for extras */
+
+#topBar {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: smaller;
+  /* background-color: #13092d; */
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
+
+/* so you wanna change the width of your page? 
+  by default, the container width is 900px.
+  in order to keep things responsive, take your new height,
+  and then subtrack it by 100. use this new number as the 
+  "max-width" value below
+  */
+
+@media only screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  /* the order of the items is adjusted here for responsiveness!
+    since the sidebars would be too small on a mobile device.
+    feel free to play around with the order!
+    */
+  main {
+    order: 1;
+  }
+
+  #leftSidebar {
+    order: 2;
+  }
+
+  #rightSidebar {
+    order: 3;
+  }
+
+  #navbar ul {
+    flex-wrap: wrap;
   }
 }
