@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const pluginSEO = require("eleventy-plugin-seo");
+const { HtmlBasePlugin } = await import("@11ty/eleventy");
 
 /**
  * This is the JavaScript code that determines the config for your Eleventy site
