@@ -12,7 +12,10 @@ const pluginSEO = require("eleventy-plugin-seo");
 module.exports = async function (eleventyConfig) {
   const { HtmlBasePlugin } = await import("@11ty/eleventy");
 
-	eleventyConfig.addPlugin(HtmlBasePlugin);
+	eleventyConfig.addPlugin(HtmlBasePlugin, {
+  baseHref: "/~thegreekgeek/", // Use a relative base href for subdirectory deployment
+  extensions: "html"
+});
   eleventyConfig.setTemplateFormats([
     // Templates:
     "html",
