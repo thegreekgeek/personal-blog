@@ -13,10 +13,9 @@ layout: layouts/home.njk
 <span style="">&#9617;&#9617;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9617;&#9617;&#160;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#160;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#160;&#160;&#160;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#160;&#160;&#160;&#160;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#160;&#160;&#160;&#9617;&#9617;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#9617;&#9617;&#160;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#9617;&#160;</span><br />
 </div>
 
+Welcome to my site! This is slated to be my web home for the time being. I plan to do some things later, but feel free to take a look around in the meaintime!
 
+- Rob   
 
-Welcome to the Glitch [Eleventy](https://www.11ty.dev/) starter, where you can create a blog or landing page that generates a static site.
-
-Each of the initial blog posts has special tips to help you get the most out of your new site–work through them all, learning how to add posts and customize how your site builds along the way. Once you've mastered the basics, you can delete all these posts and continue writing your own!
 
 ### Posts
