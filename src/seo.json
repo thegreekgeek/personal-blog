@@ -2,6 +2,6 @@
   "glitch-help-instructions": "For a custom domain, change the 'url' parameter from 'glitch-default' to your domain _without_ a traling slash, like 'https://www.example.com'",
   "title": "TESTING TESTING 2",
   "description": "A simple Eleventy blog.",
-  "url": "https://thegreekgeek.neocities.org",
+  "url": "https://tilde.club/~thegreekgeek",
   "image": "https://cdn.some.pics/thegreekgeek/677c6f3894200.png"
 }
