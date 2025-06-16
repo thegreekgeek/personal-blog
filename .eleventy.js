@@ -8,7 +8,21 @@ const pluginSEO = require("eleventy-plugin-seo");
  * Try extending it to suit your needs!
  */
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { HtmlBasePlugin } = await import("@11ty/eleventy");
+
+	eleventyConfig.addPlugin(HtmlBasePlugin, {
+		// The base URL: defaults to Path Prefix
+		baseHref: "http://tilde.club/~thegreekgeek",
+
+		// But you could use a full URL here too:
+		// baseHref: "http://example.com/"
+
+		// Comma separated list of output file extensions to apply
+		// our transform to. Use `false` to opt-out of the transform.
+		extensions: "html",
+	});
+
   eleventyConfig.setTemplateFormats([
     // Templates:
     "html",
