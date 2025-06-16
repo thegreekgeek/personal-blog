@@ -36,4 +36,4 @@ jobs:
     - name: Adding known hosts    
       run: ssh-keyscan -H tilde.club >> ~/.ssh/known_hosts
     - name: deploy with rsync
-      run: rsync -avz ./build ${{ secrets.SSH_USER }}@tilde.club:/home/${{ secrets.SSH_USER}}/public_html
+      run: rsync -avz ./build/ ${{ secrets.SSH_USER }}@tilde.club:/home/${{ secrets.SSH_USER}}/public_html
