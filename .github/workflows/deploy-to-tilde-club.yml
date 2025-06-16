@@ -1,0 +1,39 @@
+ame: Deploy to tildeclub
+# only run on changes to main. Use main or master depending on whatever your default branch is called.
+on:
+  push:
+    branches:
+      - main
+
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-tildeclub
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # The checkout step copies your repo into the action runner. Important!
+    - uses: actions/checkout@v4
+    # Set up any tools and build steps here
+    # This example uses a Node.js toolchain to build a site
+    # If you don't need Node.js to build your site, you can omit this.
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    # If you have a different build process, replace this with your own build steps
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVKEY }}
+        known_hosts: 'just-a-placeholder'
+    - name: Adding known hosts    
+      run: ssh-keyscan -H tilde.club >> ~/.ssh/known_hosts
+    - name: deploy with rsync
+      run: rsync -avz ./build ${{ secrets.SSH_USER }}@tilde.club:/home/${{ secrets.SSH_USER}}/public_html
