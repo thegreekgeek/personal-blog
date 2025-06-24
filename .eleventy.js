@@ -55,10 +55,6 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
 
-  eleventyConfig.addCollection("frontpage", function (collection) {
-    return collection.getFilteredByTags("posts", "notes");
-  });
-
   /* Build the collection of posts to list in the site
      - Read the Next Steps post to learn how to extend this
   */
@@ -126,6 +122,10 @@ module.exports = async function (eleventyConfig) {
     }
 
     return coll;
+  });
+
+  eleventyConfig.addCollection("frontpage", function (collection) {
+    return collection.getFilteredByTags("posts", "notes");
   });
 
   return {
