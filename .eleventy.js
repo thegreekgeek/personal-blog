@@ -125,7 +125,7 @@ module.exports = async function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("frontpage", function (collection) {
-		return collection.getFilteredByGlob(["src/posts/*.md", "src/notes/*.md"]);
+		return collection.getFilteredByGlob(["src/posts/*.md", "src/notes/*.md"]).reverse();
   });
 
   return {
