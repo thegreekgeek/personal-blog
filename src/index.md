@@ -18,4 +18,4 @@ Welcome to my site! This is slated to be my web home for the time being. I plan 
 - Rob   
 
 
-### Posts
+### Latest updates
