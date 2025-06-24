@@ -4,7 +4,7 @@ title: Test Project
 description: This is a test of the project page on my blog.
 tags:
   - projects
-layout: layouts/post.njk
+layout: layouts/project.njk
 permalink: "{{page.filePathStem}}/"
 ---
 # TEST PROJECT
