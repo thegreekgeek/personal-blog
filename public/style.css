@@ -305,6 +305,7 @@ details {
   display: flex;
   flex-wrap: nowrap; /* Items stay on one line by default */
   justify-content: space-around;
+  padding: 5px
 }
 
 @media (max-width: 768px) {
