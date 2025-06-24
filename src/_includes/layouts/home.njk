@@ -13,7 +13,7 @@ templateClass: tmpl-home
     <ul>
       {%- for post in collections.frontpage -%}
         <li{% if page.url == post.url %} aria-current="page"{% endif %}>{{ post.data.page.date | htmlDateString }} — <a href='{{ post.url }}'>{% if post.data.title %}{{ post.data.title }}{% else %}{{ post.data.page.date | htmlDateString }}{% endif %}</a></li>
-         <li> {{ post.data.content | safe }} </li>
+         <li> {{ content | safe }} </li>
       {%- endfor -%}
       <li><a href="/posts">View all posts</a></li>
     </ul>
