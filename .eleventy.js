@@ -125,19 +125,7 @@ module.exports = async function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("frontpage", function (collection) {
-    const coll = collection.getFilteredByTag("posts", "notes");
-
-    // From: https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
-    // Adds {{ prevSlash.url }} {{ prevSlash.data.title }}, etc, to our njks templates
-    for (let i = 0; i < coll.length; i++) {
-      const prevFPC = coll[i - 1];
-      const nextFPC = coll[i + 1];
-
-      coll[i].data["prevFPC"] = prevFPC;
-      coll[i].data["nextFPC"] = nextFPC;
-    }
-
-    return coll;
+		return collectionApi.getFilteredByGlob(["posts/*.md", "notes/*.md"]);
   });
 
   return {
