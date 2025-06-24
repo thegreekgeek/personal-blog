@@ -124,7 +124,7 @@ module.exports = async function (eleventyConfig) {
     return coll;
   });
 
-  eleventyConfig.addCollection("frontpage", function (collection) {
+  eleventyConfig.addCollection("frontpage", function (collectionApi) {
 		return collectionApi.getFilteredByGlob(["posts/*.md", "notes/*.md"]);
   });
 
