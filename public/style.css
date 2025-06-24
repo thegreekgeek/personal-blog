@@ -373,7 +373,7 @@ details {
 /* navigation section!! */
 #navbar {
   height: 40px;
-  /* background-color: #13092d; */
+  background-color: var(--bg-1);
   /* navbar color */
   width: 100%;
 }
@@ -413,7 +413,7 @@ details {
   if you want to style them separately,
   create styles for #leftSidebar and #rightSidebar */
 aside {
-  /* background-color: #241445; */
+  background-color: var(--bg-1);
   width: 200px;
   padding: 20px;
   font-size: smaller;
@@ -423,7 +423,7 @@ aside {
 /* this is the color of the main content area,
   between the sidebars! */
 main {
-  /* background-color: #43256e; */
+  background-color: var(--bg-2);
   flex: 1;
   padding: 20px;
   order: 2;
