@@ -7,6 +7,12 @@ tags:
 layout: layouts/project.njk
 permalink: "{{page.filePathStem}}/"
 ---
-# TEST PROJECT
+## Home Server Project
 
-this is a test of the project page of my blog. is it working?
+### Initial Version: Amahi
+
+### Raspberry Pi 3b
+
+### The Potato Era
+
+###
