@@ -12,7 +12,7 @@
       {
         "rel":"http://webfinger.net/rel/profile-page",
         "type":"text/html",
-        "href":"http://tilde.club/~thegreekgeek"
+        "href":"http://tilde.club/~thegreekgeek/@blog/"
       }
     ]
 }
