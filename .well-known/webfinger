@@ -7,7 +7,7 @@
       {
         "rel": "self",
         "type": "application/activity+json",
-        "href": "http://tilde.club/~thegreekgeek/@blog/"
+        "href": "http://tilde.club/~thegreekgeek/@blog"
       },
       {
         "rel":"http://webfinger.net/rel/profile-page",

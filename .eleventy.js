@@ -40,7 +40,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
       middleware: [
           function (req, res, next) {
-              if (/^actor$/.test(req.url)) {
+              if (/^@blog$/.test(req.url)) {
                   res.setHeader('Content-Type', 'application/activity+json;');
               }
               next();
