@@ -36,6 +36,18 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("actor");
 
+
+  eleventyConfig.setBrowserSyncConfig({
+      middleware: [
+          function (req, res, next) {
+              if (/^actor$/.test(req.url)) {
+                  res.setHeader('Content-Type', 'application/activity+json');
+              }
+              next();
+          }
+      ]
+  });
+
   /* From: https://github.com/artstorm/eleventy-plugin-seo
   
   Adds SEO settings to the top of all pages
