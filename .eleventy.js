@@ -41,7 +41,7 @@ module.exports = async function (eleventyConfig) {
       middleware: [
           function (req, res, next) {
               if (/^actor$/.test(req.url)) {
-                  res.setHeader('Content-Type', 'application/activity+json');
+                  res.setHeader('Content-Type', 'application/activity+json;');
               }
               next();
           }
