@@ -1,0 +1,44 @@
+{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://tilde.club/~thegreekgeek",
+    "type": "Person",
+    "following": "https://mstdn.io/users/thegreekgeek/following",
+    "followers": "https://mstdn.io/users/thegreekgeek/followers",
+    "inbox": "https://indiekit.tailacbd65.ts.net.net/api/Inbox",
+    "outbox": "https://tilde.club/~thegreekgeek/socialweb/outbox",
+    "preferredUsername": "blog",
+    "name": "Maho Pacheco - Blog",
+    "summary": "Bite-sized pieces of Software Engineering from a Garbage Code Connoisseur",
+    "url": "https://tilde.club/~thegreekgeek/",
+    "discoverable": true,
+    "memorial": false,
+    "icon": {
+      "type": "Image",
+      "mediaType": "image/png",
+      "url": "https://tilde.club/~thegreekgeek/img/avatar.png"
+    },
+    "image": {
+      "type": "Image",
+      "mediaType": "image/png",
+      "url": "https://tilde.club/~thegreekgeek/img/avatar.png"
+    },
+    "publicKey": {
+      "@context": "https://w3id.org/security/v1",
+      "@type": "Key",
+      "id": "https://tilde.club/~thegreekgeek/#main-key",
+      "owner": "https://tilde.club/~thegreekgeek/",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtBuMQAlAKA72Lz1NY/GY\nTBivp4uwUgGrkVPhbxnZFCqrpZGQ6BVgI8y+MxDk6qpv6FCwauh8530QDhaDcWdJ\n3wAgo4/JI9SyFzPI7XVE0oyq89xH2xRJnzBbT2GWF8ZXinoLP9Lk7x2rUvVEx5Ru\nGPtP5bA6xsN+6wK6mKKTbV0qBApmCw4mNwUDnTYqrDodzql4cMZc1Fjgx18c2WHr\n7NXDyFN0sTxJnrLbLvWhT9rNonIENSVwthU7yZZDygV5bThYyM1AjGo1rUN5gFwx\nak8xQeXZBeXQFvfVoN5UVHeQcgs7QoN66mNeZMmv3Bj05hsSIdlKh1W6rAx/2ZpO\n2wIDAQAB\n-----END PUBLIC KEY-----"
+    },
+    "attachment": [
+      {
+        "type": "PropertyValue",
+        "name": "Blog",
+        "value": "<a href=\"https://tilde.club/~thegreekgeek\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">maho.dev</span><span class=\"invisible\"></span></a>"
+      },
+      {
+        "type": "PropertyValue",
+        "name": "GitHub",
+        "value": "<a href=\"https://github.com/thegreekgeek\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/thegreekgeek</span><span class=\"invisible\"></span></a>"
+      }
+    ]
+}
