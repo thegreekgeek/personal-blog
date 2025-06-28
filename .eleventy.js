@@ -34,7 +34,7 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy(".well-known");
 
-  eleventyConfig.addPassthroughCopy("@blog");
+  eleventyConfig.addPassthroughCopy("blog");
 
 
   eleventyConfig.setBrowserSyncConfig({
