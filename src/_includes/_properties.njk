@@ -1,13 +1,13 @@
 <div class="flex properties__row properties">
   <div class="flex left properties">
     <span class="properties">
-      {% if post.data.date %}
-        <span class="dt-published hidden">{{ post.data.date }}</span>
+      {% if post.data.page.date %}
+        <span class="dt-published hidden">{{ post.data.page.date }}</span>
         <a class="icon u-url" href="{{ post.url }}">
           <noscript>
             {# crude date diff fallback in plain text #}
             {% set now = "now" | date("X") %}
-            {% set published = post.data.date | date("X") %}
+            {% set published = post.data.page.date | date("X") %}
             {% set diff = (now - published) / 86400 | round(0, "floor") %}
             {% if diff == 0 %}
               earlier today
