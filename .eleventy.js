@@ -36,6 +36,8 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("blog");
 
+  eleventyConfig.addPassthroughCopy("404.html");
+
 
   eleventyConfig.setBrowserSyncConfig({
       middleware: [
