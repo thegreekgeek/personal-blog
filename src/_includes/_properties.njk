@@ -6,8 +6,8 @@
         <a class="icon u-url" href="{{ post.url }}">
           <noscript>
             {# crude date diff fallback in plain text #}
-            {% set now = "now" | date("X") %}
-            {% set published = post.data.page.date | date("X") %}
+            {% set now = "now" | htmlDateString %}
+            {% set published = post.data.page.date | htmlDateString %}
             {% set diff = (now - published) / 86400 | round(0, "floor") %}
             {% if diff == 0 %}
               earlier today
