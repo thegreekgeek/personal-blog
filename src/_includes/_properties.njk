@@ -2,7 +2,7 @@
   <div class="flex left properties">
     <span class="properties">
       {% if post.data.page.date %}
-        <span class="dt-published hidden">{{ post.data.page.date }}</span>
+        <span class="dt-published hidden">{{ post.data.page.date | htmlDateString }}</span>
         <a class="icon u-url" href="{{ post.url }}">
           <noscript>
             {# crude date diff fallback in plain text #}
