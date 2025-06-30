@@ -47,7 +47,7 @@
         </h2>
     {% endif %}
 
-        {{ summary | safe }}
+        {{ post.content | safe }}
 
         {% if post.data.image %}
           {# optionally output the image here if you want #}
