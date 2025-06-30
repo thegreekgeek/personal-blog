@@ -1,0 +1,43 @@
+<div class="flex properties__row properties">
+  <div class="flex left properties">
+    <span class="properties">
+      {% if post.data.date %}
+        <span class="dt-published hidden">{{ post.data.date }}</span>
+        <a class="icon u-url" href="{{ post.url }}">
+          <noscript>
+            {# crude date diff fallback in plain text #}
+            {% set now = "now" | date("X") %}
+            {% set published = post.data.date | date("X") %}
+            {% set diff = (now - published) / 86400 | round(0, "floor") %}
+            {% if diff == 0 %}
+              earlier today
+            {% elseif diff == -1 %}
+              a day from now
+            {% elseif diff < 0 %}
+              {{ -1 * diff }} days in the future
+            {% elseif diff == 1 %}
+              a day ago
+            {% else %}
+              {{ diff }} days ago
+            {% endif %}
+          </noscript>
+          <script>
+            var scriptNodes = document.getElementsByTagName('script');
+            var scriptNode = scriptNodes[scriptNodes.length - 1];
+            var parentNode = scriptNode.parentNode;
+            parentNode.innerText = calcDateDiff({{ post.data.date | date("X") }});
+          </script>
+        </a>
+      {% endif %}
+    </span>
+  </div>
+  <div class="flex right">
+    {% if post.data.tags %}
+      {% for tag in post.data.tags %}
+        <a class="p-category properties" id="tag" href="/tags/{{ tag | url }}">
+          #{{ tag }}
+        </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
