@@ -64,7 +64,7 @@ module.exports = async function (eleventyConfig) {
 
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+    return DateTime.fromJSDate(dateObj, { zone: "cst" }).toFormat("yyyy-LL-dd");
   });
 
   eleventyConfig.addFilter("isoDateString", (dateObj) => {
