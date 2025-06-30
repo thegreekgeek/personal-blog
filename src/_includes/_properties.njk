@@ -21,12 +21,6 @@
               {{ diff }} days ago
             {% endif %}
           </noscript>
-          <script>
-            var scriptNodes = document.getElementsByTagName('script');
-            var scriptNode = scriptNodes[scriptNodes.length - 1];
-            var parentNode = scriptNode.parentNode;
-            parentNode.innerText = calcDateDiff({{ post.data.date | date("X") }});
-          </script>
         </a>
       {% endif %}
     </span>
