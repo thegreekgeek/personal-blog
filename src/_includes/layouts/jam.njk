@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# Template for jams (music/listening) #}
+
+<div class="wrapper jam">
+  <article class="h-entry">
+    <div class="jam-header">
+      <h2 class="p-name">{{ title }}</h2>
+      <a class="u-url" href="{{ page.url }}" style="display:none;"></a>
+      <span class="p-author h-card" style="display:none;">Robert Y</span>
+      <time class="dt-published" datetime="{{ date | isoDateString }}">{{ date | htmlDateString }}</time>
+    </div>
+
+    <div class="e-content">
+      {# Jams might often be just content, or could use u-audio if there is an audio file #}
+      {{ content | safe }}
+    </div>
+
+    <div class="controls">
+      {% if prevJam.url %}
+        <p>
+          <strong>Previous</strong>:
+          <a class="previous" href="{{ prevJam.url }}">{{ prevJam.data.title or prevJam.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+      {% if nextJam.url %}
+        <p>
+          <strong>Next</strong>:
+          <a class="next" href="{{ nextJam.url }}">{{ nextJam.data.title or nextJam.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+    </div>
+  </article>
+</div>

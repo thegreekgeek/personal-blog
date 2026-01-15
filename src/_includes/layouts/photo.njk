@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# Template for photos #}
+
+<div class="wrapper photo">
+  <article class="h-entry">
+    <div class="photo-header">
+      <h2 class="p-name" style="display:none;">{{ title }}</h2>
+      <a class="u-url" href="{{ page.url }}" style="display:none;"></a>
+      <span class="p-author h-card" style="display:none;">Robert Y</span>
+      <time class="dt-published" datetime="{{ date | isoDateString }}">{{ date | htmlDateString }}</time>
+    </div>
+
+    <div class="e-content">
+      {# If the content contains an img, adding u-photo class manually or via script is ideal.
+         But typically Markdown images are just <img src="...">.
+         We can wrap the content or use JS/CSS.
+         The best practice is that the image inside e-content is implicitly the photo if it's a photo post.
+         However, adding u-photo is explicit.
+         Since we can't easily inject class into markdown image without a plugin,
+         we assume the content handles it or the user puts raw HTML.
+      #}
+      {{ content | safe }}
+    </div>
+
+    <div class="controls">
+      {% if prevPhoto.url %}
+        <p>
+          <strong>Previous</strong>:
+          <a class="previous" href="{{ prevPhoto.url }}">{{ prevPhoto.data.title or prevPhoto.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+      {% if nextPhoto.url %}
+        <p>
+          <strong>Next</strong>:
+          <a class="next" href="{{ nextPhoto.url }}">{{ nextPhoto.data.title or nextPhoto.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+    </div>
+  </article>
+</div>

@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# Template for bookmarks #}
+
+<div class="wrapper bookmark">
+  <article class="h-entry">
+    <div class="bookmark-header">
+      <h2 class="p-name"><a href="{{ bookmarkOf }}" class="u-bookmark-of">{{ title or bookmarkOf }}</a></h2>
+      <a class="u-url" href="{{ page.url }}" style="display:none;"></a>
+      <span class="p-author h-card" style="display:none;">Robert Y</span>
+      <time class="dt-published" datetime="{{ date | isoDateString }}">{{ date | htmlDateString }}</time>
+    </div>
+
+    <div class="e-content">
+      {{ content | safe }}
+    </div>
+
+    <div class="controls">
+      {% if prevBookmark.url %}
+        <p>
+          <strong>Previous</strong>:
+          <a class="previous" href="{{ prevBookmark.url }}">{{ prevBookmark.data.title or prevBookmark.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+      {% if nextBookmark.url %}
+        <p>
+          <strong>Next</strong>:
+          <a class="next" href="{{ nextBookmark.url }}">{{ nextBookmark.data.title or nextBookmark.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+    </div>
+  </article>
+</div>
