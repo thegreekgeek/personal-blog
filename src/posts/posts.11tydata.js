@@ -5,6 +5,7 @@ module.exports = {
     likeOf: data => data.likeOf || data["like-of"],
     inReplyTo: data => data.inReplyTo || data["in-reply-to"],
     repostOf: data => data.repostOf || data["repost-of"],
-    bookmarkOf: data => data.bookmarkOf || data["bookmark-of"]
+    bookmarkOf: data => data.bookmarkOf || data["bookmark-of"],
+    permalink: data => `posts/${data.page.fileSlug}/`
   }
 };

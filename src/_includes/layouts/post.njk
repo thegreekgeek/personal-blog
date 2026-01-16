@@ -35,8 +35,13 @@ properties into the page #}
       </details>
     </div>
 
-    {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #} {# Content from the body of
-    the post markdown appears here #}
+    {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
+    {% if description %}
+      <p>
+        <em>{{ description }}</em>
+      </p>
+    {% endif %}
+    {# Content from the body of the post markdown appears here #}
     <div class="e-content">{{ content | safe }}</div>
     <div class="controls">
       {# The previous and next post data is added in .eleventy.js #} {% if

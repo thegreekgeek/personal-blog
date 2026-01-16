@@ -8,20 +8,21 @@ templateClass: tmpl-home
 <div class="wrapper photo">
   <article class="h-entry">
     <div class="photo-header">
-      <h2 class="p-name" style="display:none;">{{ title }}</h2>
+      {# Unhiding the title as per suggestion to make it accessible or visible if present #}
+      {% if title %}
+        <h2 class="p-name">{{ title }}</h2>
+      {% endif %}
+
       <a class="u-url" href="{{ page.url }}" style="display:none;"></a>
       <span class="p-author h-card" style="display:none;">Robert Y</span>
       <time class="dt-published" datetime="{{ date | isoDateString }}">{{ date | htmlDateString }}</time>
     </div>
 
     <div class="e-content">
-      {# If the content contains an img, adding u-photo class manually or via script is ideal.
-         But typically Markdown images are just <img src="...">.
-         We can wrap the content or use JS/CSS.
-         The best practice is that the image inside e-content is implicitly the photo if it's a photo post.
-         However, adding u-photo is explicit.
-         Since we can't easily inject class into markdown image without a plugin,
-         we assume the content handles it or the user puts raw HTML.
+      {#
+         Ideally, images should have u-photo class.
+         Since we can't easily force it on markdown images without a plugin,
+         we rely on the content.
       #}
       {{ content | safe }}
     </div>
