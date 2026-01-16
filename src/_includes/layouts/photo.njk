@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{# Template for photos #}
+
+<div class="wrapper photo">
+  <article class="h-entry">
+    <div class="photo-header">
+      {# Unhiding the title as per suggestion to make it accessible or visible if present #}
+      {% if title %}
+        <h2 class="p-name">{{ title }}</h2>
+      {% endif %}
+
+      <a class="u-url" href="{{ page.url }}" style="display:none;"></a>
+      <span class="p-author h-card" style="display:none;">Robert Y</span>
+      <time class="dt-published" datetime="{{ date | isoDateString }}">{{ date | htmlDateString }}</time>
+    </div>
+
+    <div class="e-content">
+      {#
+         Ideally, images should have u-photo class.
+         Since we can't easily force it on markdown images without a plugin,
+         we rely on the content.
+      #}
+      {{ content | safe }}
+    </div>
+
+    <div class="controls">
+      {% if prevPhoto.url %}
+        <p>
+          <strong>Previous</strong>:
+          <a class="previous" href="{{ prevPhoto.url }}">{{ prevPhoto.data.title or prevPhoto.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+      {% if nextPhoto.url %}
+        <p>
+          <strong>Next</strong>:
+          <a class="next" href="{{ nextPhoto.url }}">{{ nextPhoto.data.title or nextPhoto.data.date | htmlDateString }}</a>
+        </p>
+      {% endif %}
+    </div>
+  </article>
+</div>

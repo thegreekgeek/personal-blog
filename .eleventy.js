@@ -164,8 +164,48 @@ module.exports = async function (eleventyConfig) {
     return coll;
   });
 
+  eleventyConfig.addCollection("bookmarks", function (collection) {
+    const coll = collection.getFilteredByTag("bookmarks");
+    for (let i = 0; i < coll.length; i++) {
+      const prevBookmark = coll[i - 1];
+      const nextBookmark = coll[i + 1];
+      coll[i].data["prevBookmark"] = prevBookmark;
+      coll[i].data["nextBookmark"] = nextBookmark;
+    }
+    return coll;
+  });
+
+  eleventyConfig.addCollection("jams", function (collection) {
+    const coll = collection.getFilteredByTag("jams");
+    for (let i = 0; i < coll.length; i++) {
+      const prevJam = coll[i - 1];
+      const nextJam = coll[i + 1];
+      coll[i].data["prevJam"] = prevJam;
+      coll[i].data["nextJam"] = nextJam;
+    }
+    return coll;
+  });
+
+  eleventyConfig.addCollection("photos", function (collection) {
+    const coll = collection.getFilteredByTag("photos");
+    for (let i = 0; i < coll.length; i++) {
+      const prevPhoto = coll[i - 1];
+      const nextPhoto = coll[i + 1];
+      coll[i].data["prevPhoto"] = prevPhoto;
+      coll[i].data["nextPhoto"] = nextPhoto;
+    }
+    return coll;
+  });
+
   eleventyConfig.addCollection("frontpage", function (collection) {
-		return collection.getFilteredByGlob(["src/posts/*.md", "src/notes/*.md", "src/likes/*.md"]).reverse();
+		return collection.getFilteredByGlob([
+      "src/posts/*.md",
+      "src/notes/*.md",
+      "src/likes/*.md",
+      "src/bookmarks/*.md",
+      "src/jams/*.md",
+      "src/photos/*.md"
+    ]).reverse();
   });
 
   return {
